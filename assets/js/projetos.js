@@ -242,22 +242,6 @@ window.PROJETOS = [
     mock: { cor: "#D9622B", sigla: "PET", rotulo: "Pedir pelo WhatsApp" }
   },
   {
-    id: "usp",
-    tipo: "app",
-    titulo: "Carteira Digital do Estudante",
-    segmento: "Educação",
-    resumo: "Comprovante de matrícula por QR code com assinatura digital, feito para o concurso de novo layout da USP.",
-    desafio: "Validar o vínculo de um estudante na hora, pelo celular, sem servidor e à prova de falsificação.",
-    entrega: [
-      "QR code com assinatura digital ECDSA",
-      "Painel administrativo para emitir e revogar carteirinhas",
-      "Validação instantânea pela câmera do celular"
-    ],
-    stack: ["JavaScript", "Web Crypto", "QR Code", "IA"],
-    img: "assets/img/work/usp.webp",
-    link: "https://thooncoder.github.io/usp-carteira-digital/"
-  },
-  {
     id: "pedagios",
     tipo: "app",
     titulo: "Maré — Pedágios e Despesas",
