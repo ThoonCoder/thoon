@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Thoon — Sites, sistemas e aplicativos sob medida</title>
+<meta name="description" content="Criamos sites que vendem, sistemas de gestão que organizam a operação e aplicativos que funcionam até sem internet. Mais de 20 projetos entregues para logística, saúde, veterinária, imobiliário e varejo." />
+<meta name="author" content="Thoon" />
+<link rel="canonical" href="https://thooncoder.github.io/" />
+<meta name="theme-color" content="#0A6B5C" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#070D0C" media="(prefers-color-scheme: dark)" />
+
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:site_name" content="Thoon" />
+<meta property="og:url" content="https://thooncoder.github.io/" />
+<meta property="og:title" content="Thoon — Sites, sistemas e aplicativos sob medida" />
+<meta property="og:description" content="Sites que vendem, sistemas que organizam, apps que funcionam até sem internet. Veja mais de 20 projetos reais." />
+<meta property="og:image" content="https://thooncoder.github.io/assets/img/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Instrument+Sans:wght@400..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+
+<script>
+  /* Antes de pintar: aplica o tema salvo para não piscar o outro. */
+  try { var t = localStorage.getItem("thoon-tema"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Thoon",
+  "description": "Desenvolvimento de sites, sistemas de gestão e aplicativos sob medida.",
+  "url": "https://thooncoder.github.io/",
+  "areaServed": "BR",
+  "address": { "@type": "PostalAddress", "addressLocality": "São Paulo", "addressRegion": "SP", "addressCountry": "BR" },
+  "knowsAbout": ["Criação de sites", "Landing pages", "Sistemas de gestão", "Aplicativos PWA", "Integração de APIs"]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ============ TOPO ============ -->
+<header class="top" id="topo">
+  <div class="wrap top__in">
+    <a class="logo" href="#" aria-label="Thoon — início">
+      <svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" /><path d="M7 24c4-5.5 8.5-5.5 12.5 0s8.5 5.5 13.5-1" /></svg>
+      <span class="logo__word">thoon</span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#processo">Como funciona</a>
+      <a href="#planos">Planos</a>
+      <a href="#faq">Dúvidas</a>
+      <a class="btn btn--brand nav__cta" href="#orcamento">Pedir orçamento</a>
+    </nav>
+
+    <div class="top__tools">
+      <button class="icon-btn" type="button" id="temaBtn" aria-label="Alternar tema">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z" /></svg>
+      </button>
+      <button class="icon-btn menu-btn" type="button" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <p class="tag"><span class="dot"></span>Agenda aberta para novos projetos</p>
+      <h1>Seu negócio merece mais do que um site bonito.</h1>
+      <p class="hero__lede">
+        A Thoon cria <strong>sites que trazem clientes</strong>, <strong>sistemas que organizam a operação</strong>
+        e <strong>aplicativos que funcionam até sem internet</strong> — feitos sob medida, por quem entende do seu trabalho.
+      </p>
+      <div class="hero__ctas">
+        <a class="btn btn--wa btn--lg" data-wa="hero" href="#orcamento">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.3-.5 0-1 .3-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.2 1.4 2.5 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.3Z" /></svg>
+          Quero um orçamento
+        </a>
+        <a class="btn btn--ghost btn--lg" href="#portfolio">Ver projetos reais</a>
+      </div>
+      <dl class="proof">
+        <div><dt>Projetos entregues</dt><dd>20<span>+</span></dd></div>
+        <div><dt>Segmentos atendidos</dt><dd>9</dd></div>
+        <div><dt>Mensalidade obrigatória</dt><dd>R$&nbsp;0</dd></div>
+      </dl>
+    </div>
+
+    <div class="hero__stage" aria-hidden="true">
+      <figure class="dev dev--back">
+        <div class="dev__bar"><i></i><i></i><i></i><span>sgq · gestão da qualidade</span></div>
+        <img src="assets/img/work/sgq.webp" alt="" width="1200" height="750" fetchpriority="high" />
+      </figure>
+      <figure class="dev dev--front">
+        <div class="dev__bar"><i></i><i></i><i></i><span>maretransportes.com</span></div>
+        <img src="assets/img/work/mare.webp" alt="" width="1200" height="750" />
+      </figure>
+      <figure class="phone">
+        <img src="assets/img/work/tfinance.webp" alt="" width="600" height="1299" />
+      </figure>
+      <div class="chip chip--a"><b>−90%</b> no peso da página</div>
+      <div class="chip chip--b"><span class="dot"></span>Rastreio em tempo real</div>
+    </div>
+  </div>
+
+  <div class="ribbon" aria-label="Segmentos atendidos">
+    <div class="ribbon__track">
+      <span>Logística</span><span>Saúde</span><span>Veterinária</span><span>Imobiliário</span><span>Oficinas</span><span>Pet shop</span><span>Educação</span><span>Fitness</span><span>Finanças</span>
+      <span aria-hidden="true">Logística</span><span aria-hidden="true">Saúde</span><span aria-hidden="true">Veterinária</span><span aria-hidden="true">Imobiliário</span><span aria-hidden="true">Oficinas</span><span aria-hidden="true">Pet shop</span><span aria-hidden="true">Educação</span><span aria-hidden="true">Fitness</span><span aria-hidden="true">Finanças</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DOR ============ -->
+<section class="sec sec--tight">
+  <div class="wrap pains">
+    <h2 class="pains__title">Se alguma dessas frases soa familiar, a gente deveria conversar.</h2>
+    <ul class="pains__list">
+      <li>“Meu cliente procura no Google e encontra o concorrente.”</li>
+      <li>“Tenho site, mas ninguém chama no WhatsApp por ele.”</li>
+      <li>“A operação inteira roda em planilha e grupo de WhatsApp.”</li>
+      <li>“Pago mensalidade num sistema que não foi feito pro meu negócio.”</li>
+      <li>“Passo horas no fim do mês juntando relatório na mão.”</li>
+      <li>“Minha equipe precisa usar no celular, no pátio, sem sinal.”</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ SERVIÇOS ============ -->
+<section class="sec" id="servicos">
+  <div class="wrap">
+    <header class="sec__head">
+      <p class="kicker">01 · Serviços</p>
+      <h2>Do primeiro clique do cliente até o relatório do fim do mês.</h2>
+      <p class="sec__lede">Você não precisa saber o nome técnico do que precisa. Conte o problema — a gente desenha a solução.</p>
+    </header>
+
+    <div class="services">
+      <article class="svc">
+        <div class="svc__ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2" /><path d="M3 8h18M8 21h8M12 18v3" /></svg></div>
+        <h3>Sites institucionais</h3>
+        <p>Presença profissional que passa confiança, aparece no Google e leva o visitante direto para o seu WhatsApp.</p>
+        <ul><li>Design exclusivo, nada de template</li><li>Rápido no celular</li><li>SEO e Google Meu Negócio</li></ul>
+      </article>
+      <article class="svc">
+        <div class="svc__ico"><svg viewBox="0 0 24 24"><path d="M4 19V5M4 19h16M8 15l3-4 3 2 5-6" /></svg></div>
+        <h3>Landing pages de venda</h3>
+        <p>Uma página, um objetivo: transformar visita em contato. Ideal para lançamentos, campanhas e anúncios.</p>
+        <ul><li>Simuladores e calculadoras</li><li>Formulário que não perde lead</li><li>Pronta para Google e Meta Ads</li></ul>
+      </article>
+      <article class="svc svc--hl">
+        <div class="svc__ico"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="9" rx="1.5" /><rect x="14" y="3" width="7" height="5" rx="1.5" /><rect x="14" y="12" width="7" height="9" rx="1.5" /><rect x="3" y="16" width="7" height="5" rx="1.5" /></svg></div>
+        <h3>Sistemas de gestão sob medida</h3>
+        <p>Tire a operação das planilhas. Estoque, frota, qualidade, financeiro, ordens de serviço — com a cara do seu processo.</p>
+        <ul><li>Painéis e indicadores</li><li>Relatórios em PDF e Excel</li><li>Acesso por usuário e permissão</li></ul>
+      </article>
+      <article class="svc">
+        <div class="svc__ico"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3" /><path d="M10 18h4" /></svg></div>
+        <h3>Aplicativos</h3>
+        <p>Apps que instalam no celular direto do navegador, sem loja, e continuam funcionando sem internet.</p>
+        <ul><li>Para equipe de campo ou clientes</li><li>Funciona offline</li><li>Sem taxa de loja de apps</li></ul>
+      </article>
+      <article class="svc">
+        <div class="svc__ico"><svg viewBox="0 0 24 24"><path d="M8 7 3 12l5 5M16 7l5 5-5 5M14 4l-4 16" /></svg></div>
+        <h3>Integrações e automações</h3>
+        <p>Conectamos seu site ou sistema a APIs de rastreio, ERPs e planilhas, e automatizamos tarefas repetitivas.</p>
+        <ul><li>APIs de logística e pagamento</li><li>Faturas e relatórios automáticos</li><li>Inteligência artificial aplicada</li></ul>
+      </article>
+      <article class="svc">
+        <div class="svc__ico"><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-3-6.7L21 8M21 3v5h-5" /></svg></div>
+        <h3>Reformulação de site antigo</h3>
+        <p>Seu site é lento, desatualizado ou não converte? Refazemos mantendo o que funciona e corrigindo o que afasta cliente.</p>
+        <ul><li>Diagnóstico gratuito</li><li>Mais leve e mais rápido</li><li>Correção de formulários e SEO</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PORTFÓLIO ============ -->
+<section class="sec sec--alt" id="portfolio">
+  <div class="wrap">
+    <header class="sec__head sec__head--row">
+      <div>
+        <p class="kicker">02 · Portfólio</p>
+        <h2>Projetos reais, em uso de verdade.</h2>
+        <p class="sec__lede">Cada projeto começou com um problema concreto. Clique para ver o desafio e o que foi entregue.</p>
+      </div>
+      <div class="filters" role="tablist" aria-label="Filtrar projetos">
+        <button type="button" role="tab" aria-selected="true" data-filtro="todos">Todos <span data-count="todos"></span></button>
+        <button type="button" role="tab" aria-selected="false" data-filtro="site">Sites <span data-count="site"></span></button>
+        <button type="button" role="tab" aria-selected="false" data-filtro="sistema">Sistemas <span data-count="sistema"></span></button>
+        <button type="button" role="tab" aria-selected="false" data-filtro="app">Apps <span data-count="app"></span></button>
+      </div>
+    </header>
+
+    <div class="grid-work" id="gridWork"></div>
+    <div class="more"><button class="btn btn--ghost" type="button" id="maisBtn">Ver todos os projetos</button></div>
+  </div>
+</section>
+
+<!-- ============ DIFERENCIAIS ============ -->
+<section class="sec" id="diferenciais">
+  <div class="wrap">
+    <header class="sec__head">
+      <p class="kicker">03 · Por que a Thoon</p>
+      <h2>Feito por quem trabalha dentro da operação.</h2>
+      <p class="sec__lede">
+        Os sistemas da Thoon nasceram dentro de uma transportadora, resolvendo problemas de verdade —
+        CT-e, romaneio, auditoria, frota. Por isso a tela já fala a língua da sua equipe.
+      </p>
+    </header>
+
+    <div class="diffs">
+      <div class="diff">
+        <span class="diff__n">01</span>
+        <h3>Você é dono de tudo</h3>
+        <p>Código, domínio e dados ficam no seu nome. Sem contrato de fidelidade, sem refém de plataforma.</p>
+      </div>
+      <div class="diff">
+        <span class="diff__n">02</span>
+        <h3>Sem mensalidade obrigatória</h3>
+        <p>Sites podem ser hospedados de graça e sistemas podem rodar no seu próprio computador. Suporte só se você quiser.</p>
+      </div>
+      <div class="diff">
+        <span class="diff__n">03</span>
+        <h3>Celular em primeiro lugar</h3>
+        <p>Seu cliente chega pelo celular e sua equipe trabalha em pé. A tela pequena é o caso principal, não a adaptação.</p>
+      </div>
+      <div class="diff">
+        <span class="diff__n">04</span>
+        <h3>Rápido de verdade</h3>
+        <p>Páginas leves que abrem em menos de dois segundos. Site lento perde cliente antes de carregar.</p>
+      </div>
+      <div class="diff">
+        <span class="diff__n">05</span>
+        <h3>Especificação por nicho</h3>
+        <p>Antes do código, cada projeto ganha um plano completo pensado para o seu segmento — não um molde genérico.</p>
+      </div>
+      <div class="diff">
+        <span class="diff__n">06</span>
+        <h3>Fala direto com quem faz</h3>
+        <p>Sem intermediário e sem telefone de central. Você conversa com o desenvolvedor do começo ao fim.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESSO ============ -->
+<section class="sec sec--dark" id="processo">
+  <div class="wrap">
+    <header class="sec__head">
+      <p class="kicker">04 · Como funciona</p>
+      <h2>Do primeiro “oi” ao site no ar, em cinco passos.</h2>
+    </header>
+
+    <ol class="steps">
+      <li>
+        <span class="steps__n">1</span>
+        <h3>Conversa</h3>
+        <p>Você conta o que precisa pelo WhatsApp ou chamada. Sem formulário longo, sem compromisso.</p>
+      </li>
+      <li>
+        <span class="steps__n">2</span>
+        <h3>Proposta</h3>
+        <p>Você recebe escopo, prazo e valor fechados por escrito. Sem surpresa no meio do caminho.</p>
+      </li>
+      <li>
+        <span class="steps__n">3</span>
+        <h3>Protótipo</h3>
+        <p>Antes de construir tudo, você vê e aprova o visual. Ajustes entram aqui, quando custam pouco.</p>
+      </li>
+      <li>
+        <span class="steps__n">4</span>
+        <h3>Desenvolvimento</h3>
+        <p>Você acompanha a evolução por um link de teste e dá retorno em cada etapa.</p>
+      </li>
+      <li>
+        <span class="steps__n">5</span>
+        <h3>Entrega e treinamento</h3>
+        <p>Publicamos, ensinamos sua equipe a usar e entregamos tudo documentado no seu nome.</p>
+      </li>
+    </ol>
+
+    <div class="method">
+      <figure class="method__shot">
+        <img src="assets/img/work/prompt.webp" alt="Tela do Prompt Architect, ferramenta própria da Thoon para especificar projetos por nicho" width="1200" height="750" loading="lazy" />
+      </figure>
+      <div class="method__copy">
+        <p class="kicker">Ferramenta própria</p>
+        <h3>Nenhum projeto começa no improviso.</h3>
+        <p>
+          A Thoon desenvolveu o <strong>Prompt Architect</strong>, uma ferramenta interna com conhecimento de
+          mais de 50 nichos de negócio. Ela gera a especificação completa do projeto — público, páginas,
+          textos, design, SEO e pontos de conversão — antes da primeira linha de código.
+        </p>
+        <p>Resultado: um site que fala com o <em>seu</em> cliente, não com um cliente genérico.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PLANOS ============ -->
+<section class="sec" id="planos">
+  <div class="wrap">
+    <header class="sec__head sec__head--center">
+      <p class="kicker">05 · Planos</p>
+      <h2>Escolha o ponto de partida.</h2>
+      <p class="sec__lede">Todo projeto é sob medida. Os planos abaixo mostram o que normalmente está incluso — o orçamento final sai depois da conversa.</p>
+    </header>
+
+    <div class="plans">
+      <article class="plan">
+        <h3>Landing page</h3>
+        <p class="plan__for">Para campanhas, lançamentos e anúncios.</p>
+        <p class="plan__price" data-preco="landing"></p>
+        <ul>
+          <li>1 página focada em conversão</li>
+          <li>Botão e formulário para WhatsApp</li>
+          <li>Simulador ou calculadora (opcional)</li>
+          <li>Pronta para Google e Meta Ads</li>
+          <li>Hospedagem gratuita configurada</li>
+        </ul>
+        <a class="btn btn--ghost" data-wa="plano-landing" href="#orcamento">Quero uma landing page</a>
+      </article>
+      <article class="plan plan--hl">
+        <p class="plan__badge">Mais pedido</p>
+        <h3>Site institucional</h3>
+        <p class="plan__for">Para empresas que querem ser encontradas e passar confiança.</p>
+        <p class="plan__price" data-preco="site"></p>
+        <ul>
+          <li>Até 6 páginas com design exclusivo</li>
+          <li>Textos orientados a venda</li>
+          <li>SEO e Google Meu Negócio</li>
+          <li>Tema claro e escuro</li>
+          <li>Domínio próprio e e-mail configurados</li>
+        </ul>
+        <a class="btn btn--brand" data-wa="plano-site" href="#orcamento">Quero um site</a>
+      </article>
+      <article class="plan">
+        <h3>Sistema de gestão</h3>
+        <p class="plan__for">Para tirar a operação da planilha.</p>
+        <p class="plan__price" data-preco="sistema"></p>
+        <ul>
+          <li>Módulos desenhados para o seu processo</li>
+          <li>Painel com indicadores</li>
+          <li>Relatórios em PDF e Excel</li>
+          <li>Usuários e permissões</li>
+          <li>Treinamento da equipe</li>
+        </ul>
+        <a class="btn btn--ghost" data-wa="plano-sistema" href="#orcamento">Quero um sistema</a>
+      </article>
+      <article class="plan">
+        <h3>Aplicativo</h3>
+        <p class="plan__for">Para equipe de campo ou para fidelizar clientes.</p>
+        <p class="plan__price" data-preco="app"></p>
+        <ul>
+          <li>Instala no celular sem loja</li>
+          <li>Funciona sem internet</li>
+          <li>Android e iPhone com o mesmo app</li>
+          <li>Notificações e sincronização</li>
+          <li>Sem taxa de loja de aplicativos</li>
+        </ul>
+        <a class="btn btn--ghost" data-wa="plano-app" href="#orcamento">Quero um app</a>
+      </article>
+    </div>
+    <p class="plans__note">Manutenção mensal é opcional: você contrata só se quiser que a Thoon cuide de atualizações e melhorias.</p>
+  </div>
+</section>
+
+<!-- ============ ORÇAMENTO ============ -->
+<section class="sec sec--alt" id="orcamento">
+  <div class="wrap quote">
+    <div class="quote__intro">
+      <p class="kicker">06 · Orçamento</p>
+      <h2>Monte seu projeto em 30 segundos.</h2>
+      <p class="sec__lede">Marque o que você precisa e a mensagem chega pronta no WhatsApp. Resposta no mesmo dia útil.</p>
+      <ul class="quote__promise">
+        <li>Sem compromisso</li>
+        <li>Proposta por escrito</li>
+        <li>Diagnóstico gratuito do seu site atual</li>
+      </ul>
+    </div>
+
+    <form class="quote__form" id="quoteForm" novalidate>
+      <fieldset>
+        <legend>O que você precisa?</legend>
+        <div class="opts">
+          <label><input type="radio" name="tipo" value="Site institucional" checked /><span>Site institucional</span></label>
+          <label><input type="radio" name="tipo" value="Landing page de venda" /><span>Landing page</span></label>
+          <label><input type="radio" name="tipo" value="Sistema de gestão" /><span>Sistema de gestão</span></label>
+          <label><input type="radio" name="tipo" value="Aplicativo" /><span>Aplicativo</span></label>
+          <label><input type="radio" name="tipo" value="Reformular meu site atual" /><span>Reformular site</span></label>
+          <label><input type="radio" name="tipo" value="Ainda não sei" /><span>Ainda não sei</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>O que não pode faltar? <small>(opcional)</small></legend>
+        <div class="opts opts--check">
+          <label><input type="checkbox" name="recurso" value="Botão de WhatsApp" /><span>WhatsApp</span></label>
+          <label><input type="checkbox" name="recurso" value="Agendamento" /><span>Agendamento</span></label>
+          <label><input type="checkbox" name="recurso" value="Catálogo de produtos" /><span>Catálogo</span></label>
+          <label><input type="checkbox" name="recurso" value="Pagamento online" /><span>Pagamento online</span></label>
+          <label><input type="checkbox" name="recurso" value="Área do cliente" /><span>Área do cliente</span></label>
+          <label><input type="checkbox" name="recurso" value="Painel com relatórios" /><span>Relatórios</span></label>
+          <label><input type="checkbox" name="recurso" value="Integração com outro sistema" /><span>Integração</span></label>
+          <label><input type="checkbox" name="recurso" value="Funcionar sem internet" /><span>Offline</span></label>
+        </div>
+      </fieldset>
+
+      <div class="fields">
+        <label class="field">
+          <span>Seu nome</span>
+          <input type="text" name="nome" autocomplete="name" placeholder="Como podemos te chamar?" required />
+        </label>
+        <label class="field">
+          <span>Empresa ou segmento</span>
+          <input type="text" name="empresa" autocomplete="organization" placeholder="Ex.: clínica veterinária em Osasco" />
+        </label>
+        <label class="field field--full">
+          <span>Conte rapidinho o objetivo <small>(opcional)</small></span>
+          <textarea name="obs" rows="3" placeholder="Ex.: quero que mais clientes me achem no Google e chamem no WhatsApp."></textarea>
+        </label>
+      </div>
+
+      <p class="quote__err" id="quoteErr" role="alert"></p>
+      <button class="btn btn--wa btn--lg btn--block" type="submit">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.3-.5 0-1 .3-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.2 1.4 2.5 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.3Z" /></svg>
+        <span id="quoteBtnLabel">Enviar pelo WhatsApp</span>
+      </button>
+      <p class="quote__alt">Prefere e-mail? <a data-mail href="#">Escreva para nós</a>.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="sec" id="faq">
+  <div class="wrap faq">
+    <header class="sec__head">
+      <p class="kicker">07 · Dúvidas</p>
+      <h2>Perguntas que todo mundo faz.</h2>
+    </header>
+
+    <div class="faq__list">
+      <details>
+        <summary>Quanto custa um site?</summary>
+        <p>Depende do tamanho e do que ele precisa fazer. Uma landing page custa bem menos que um sistema com vários módulos. Por isso o orçamento sai depois de uma conversa rápida — e vem por escrito, com escopo e prazo fechados.</p>
+      </details>
+      <details>
+        <summary>Vou ter que pagar mensalidade?</summary>
+        <p>Não é obrigatório. Sites podem ficar hospedados gratuitamente e você paga só o domínio (cerca de R$ 40 por ano no registro.br). Se quiser que a Thoon cuide de atualizações e melhorias, existe um plano de manutenção opcional.</p>
+      </details>
+      <details>
+        <summary>Quanto tempo leva?</summary>
+        <p>Uma landing page costuma ficar pronta em poucos dias. Sites institucionais levam algumas semanas e sistemas variam conforme os módulos. O prazo exato vem na proposta, antes de você fechar.</p>
+      </details>
+      <details>
+        <summary>O site e o código ficam no meu nome?</summary>
+        <p>Sim. Domínio, código e dados são seus. Você recebe tudo documentado e pode levar para onde quiser.</p>
+      </details>
+      <details>
+        <summary>Funciona bem no celular?</summary>
+        <p>Tudo é desenhado primeiro para o celular. É por ele que a maioria dos seus clientes vai chegar — e é nele que sua equipe vai usar o sistema.</p>
+      </details>
+      <details>
+        <summary>Consigo alterar textos e fotos depois?</summary>
+        <p>Sim. Deixamos o conteúdo organizado em arquivos simples, com instruções, e ensinamos você a atualizar. Se preferir, a Thoon faz as alterações para você.</p>
+      </details>
+      <details>
+        <summary>Já tenho um site. Vale a pena refazer?</summary>
+        <p>Às vezes não precisa refazer tudo. Fazemos um diagnóstico gratuito: velocidade, celular, Google e formulários. Já encontramos site perdendo cliente porque o campo de WhatsApp não aceitava telefone.</p>
+      </details>
+      <details>
+        <summary>Atendem fora de São Paulo?</summary>
+        <p>Sim. Todo o atendimento é online, então atendemos qualquer cidade do Brasil.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA FINAL ============ -->
+<section class="final">
+  <div class="wrap final__in">
+    <h2>Vamos colocar seu negócio para trabalhar por você?</h2>
+    <p>Conte sua ideia em uma mensagem. A conversa é gratuita e sem compromisso.</p>
+    <div class="final__ctas">
+      <a class="btn btn--wa btn--lg" data-wa="final" href="#orcamento">Chamar no WhatsApp</a>
+      <a class="btn btn--light btn--lg" data-mail href="#">Enviar e-mail</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <div class="foot__brand">
+      <a class="logo" href="#" aria-label="Thoon — voltar ao topo">
+        <svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" /><path d="M7 24c4-5.5 8.5-5.5 12.5 0s8.5 5.5 13.5-1" /></svg>
+        <span class="logo__word">thoon</span>
+      </a>
+      <p>Sites, sistemas e aplicativos sob medida.</p>
+      <p class="foot__muted" data-cfg="atendimento"></p>
+    </div>
+    <nav class="foot__col" aria-label="Rodapé">
+      <h4>Navegação</h4>
+      <a href="#servicos">Serviços</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#processo">Como funciona</a>
+      <a href="#planos">Planos</a>
+      <a href="#faq">Dúvidas</a>
+    </nav>
+    <div class="foot__col">
+      <h4>Contato</h4>
+      <a data-wa="rodape" href="#orcamento">WhatsApp</a>
+      <a data-mail href="#" data-cfg-text="email"></a>
+      <a id="igLink" hidden target="_blank" rel="noopener">Instagram</a>
+      <a id="ghLink" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+  <div class="wrap foot__base">
+    <span>© <span id="ano"></span> Thoon. Todos os direitos reservados.</span>
+    <span class="foot__muted">Este site foi feito pela Thoon — sem template.</span>
+  </div>
+</footer>
+
+<a class="wa-float" data-wa="flutuante" href="#orcamento" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.3-.5 0-1 .3-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.2 1.4 2.5 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.3Z" /></svg>
+</a>
+
+<!-- Janela de detalhes do projeto -->
+<dialog class="case" id="caseDlg" aria-labelledby="caseTitle">
+  <div class="case__in">
+    <button class="case__close" type="button" id="caseClose" aria-label="Fechar">×</button>
+    <div class="case__media" id="caseMedia"></div>
+    <div class="case__body">
+      <p class="case__seg" id="caseSeg"></p>
+      <h3 id="caseTitle"></h3>
+      <p class="case__resumo" id="caseResumo"></p>
+      <h4>O desafio</h4>
+      <p id="caseDesafio"></p>
+      <h4>O que entregamos</h4>
+      <ul id="caseEntrega"></ul>
+      <div class="chips" id="caseStack"></div>
+      <div class="case__ctas" id="caseCtas"></div>
+    </div>
+  </div>
+</dialog>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/projetos.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
