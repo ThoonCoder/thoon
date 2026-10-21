@@ -9,7 +9,7 @@
 window.THOON = {
   marca: "Thoon",
   responsavel: "Guilherme Carvalho",
-  whatsapp: "",
+  whatsapp: "5511946332635",
   email: "contact.guilhermecsantoss@gmail.com",
   instagram: "",                 // ex.: "bythoon" (sem @)
   github: "ThoonCoder",
