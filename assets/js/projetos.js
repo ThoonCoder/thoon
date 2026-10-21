@@ -29,6 +29,44 @@ window.PROJETOS = [
     mobile: "assets/img/work/mare_m.webp"
   },
   {
+    id: "belas-artes",
+    tipo: "site",
+    destaque: true,
+    titulo: "Padaria Belas Artes",
+    segmento: "Padaria e restaurante · 14 unidades",
+    resumo: "Site de uma rede de padarias de São Paulo, com encomendas, reservas, cartão-presente e delivery.",
+    desafio: "Uma rede com 14 unidades precisava concentrar encomendas, reservas e cardápios num só lugar — sem o cliente ter que ligar para cada loja.",
+    entrega: [
+      "Calculadora de encomendas para kit festa, coffee break e pão de metro",
+      "Reservas e cartão-presente direto do topo do site",
+      "Página de unidades, cardápios, delivery e blog",
+      "WhatsApp, Google Analytics e Meta Pixel para medir cada contato"
+    ],
+    stack: ["WordPress", "Elementor", "Analytics", "Meta Pixel"],
+    img: "assets/img/work/padaria.webp",
+    mobile: "assets/img/work/padaria_m.webp",
+    link: "https://padariabelasartes.com.br/"
+  },
+  {
+    id: "bruttus",
+    tipo: "site",
+    destaque: true,
+    titulo: "Bruttus Burger",
+    segmento: "Hamburgueria · Osasco",
+    resumo: "Site com a identidade irreverente da hamburgueria, focado em pedido rápido pelo delivery próprio.",
+    desafio: "A hamburgueria dependia do iFood e queria levar o cliente para o delivery próprio, sem perder a personalidade da marca.",
+    entrega: [
+      "Botões de pedido e WhatsApp da loja logo no primeiro clique",
+      "Lançamentos do cardápio em destaque (“new drop”)",
+      "Grupo VIP para transformar cliente em cliente fixo",
+      "Pixels do Meta e do TikTok e Google Analytics prontos para anúncios"
+    ],
+    stack: ["React", "Design autoral", "Meta Pixel", "TikTok Pixel"],
+    img: "assets/img/work/bruttus.webp",
+    mobile: "assets/img/work/bruttus_m.webp",
+    link: "https://bruttus.com.br/"
+  },
+  {
     id: "sgq",
     tipo: "sistema",
     destaque: true,
