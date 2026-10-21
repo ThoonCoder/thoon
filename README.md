@@ -31,3 +31,9 @@ assets/img/og.png     Imagem que aparece ao compartilhar o link
 ## Publicação
 
 GitHub Pages, branch `main`, pasta raiz. Todo push para `main` atualiza o site em ~1 minuto.
+
+## Cache
+
+O GitHub Pages deixa o navegador guardar os arquivos por 10 minutos. Ao mudar CSS ou JS,
+aumente o `?v=` nos quatro `<link>`/`<script>` do fim e do topo do `index.html`
+(ex.: `?v=4` → `?v=5`) para todo mundo receber a versão nova na hora.
