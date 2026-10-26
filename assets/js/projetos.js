@@ -67,6 +67,44 @@ window.PROJETOS = [
     link: "https://bruttus.com.br/"
   },
   {
+    id: "r13",
+    tipo: "site",
+    destaque: true,
+    titulo: "R13 Mecânica",
+    segmento: "Oficina mecânica · Osasco",
+    resumo: "Site premium minimalista para uma oficina de Osasco, construído sobre a identidade “Sextavado”, a geometria de uma porca.",
+    desafio: "A oficina queria ser vista como precisa e de confiança, e não como mais uma mecânica de bairro, levando o cliente direto para o WhatsApp do mecânico.",
+    entrega: [
+      "Logo R13 vetorizado em ângulos de 60°, com hexágonos e cantos chanfrados no site todo",
+      "8 serviços, cada um abrindo o WhatsApp com a mensagem do serviço",
+      "Casos reais do Instagram da oficina no lugar de fotos de banco de imagens",
+      "Horário com “aberto agora”, mapa e SEO local com dados estruturados"
+    ],
+    stack: ["HTML/CSS/JS", "SVG", "JSON-LD", "Sem dependências"],
+    img: "assets/img/work/r13.webp",
+    mobile: "assets/img/work/r13_m.webp",
+    link: "https://thooncoder.github.io/r13/"
+  },
+  {
+    id: "lemcar",
+    tipo: "site",
+    destaque: true,
+    titulo: "LemCar Serviços Automotivos",
+    segmento: "Oficina mecânica · Osasco",
+    resumo: "Site de uma oficina com 43 mil seguidores no Instagram, transformando a audiência em agendamentos pelo WhatsApp.",
+    desafio: "A LemCar tinha público grande no Instagram e nota 4,9 no Google, mas nenhum lugar que reunisse serviços, avaliações e agendamento.",
+    entrega: [
+      "Reels do Instagram em destaque, levando direto para os vídeos",
+      "Avaliações reais do Google e nota 4,9 em evidência",
+      "Agendamento pelo WhatsApp em todos os pontos da página",
+      "SEO local com dados estruturados, mapa e rota em um clique"
+    ],
+    stack: ["HTML/CSS/JS", "JSON-LD", "Sem dependências"],
+    img: "assets/img/work/lemcar.webp",
+    mobile: "assets/img/work/lemcar_m.webp",
+    link: "https://thooncoder.github.io/lemcar/"
+  },
+  {
     id: "sgq",
     tipo: "sistema",
     destaque: true,
