@@ -105,6 +105,42 @@ window.PROJETOS = [
     link: "https://thooncoder.github.io/lemcar/"
   },
   {
+    id: "guhburguer",
+    tipo: "site",
+    destaque: true,
+    titulo: "GUH BURGUER",
+    segmento: "Hamburgueria artesanal · Osasco",
+    resumo: "Site de hamburgueria com cardápio ilustrado e pedido montado direto no WhatsApp da loja.",
+    desafio: "A hamburgueria vendia pelos apps e pelo WhatsApp, mas não tinha um lugar próprio para mostrar o cardápio e receber o pedido já pronto.",
+    entrega: [
+      "Cada lanche desenhado em camadas que se abrem e viram a foto real ao passar o mouse",
+      "Sacola que monta o pedido, com entrega ou retirada, e envia tudo pronto no WhatsApp",
+      "Preço de combo ou só do lanche com um toque, porções e molhos da casa",
+      "iFood, 99Food e Keeta lado a lado, Instagram e SEO local com dados estruturados"
+    ],
+    stack: ["HTML/CSS/JS", "SVG", "JSON-LD", "Sem dependências"],
+    img: "assets/img/work/guhburguer.webp",
+    mobile: "assets/img/work/guhburguer_m.webp",
+    link: "https://guh-burguer.vercel.app/"
+  },
+  {
+    id: "guhburguer-pdv",
+    tipo: "sistema",
+    destaque: true,
+    titulo: "GUH BURGUER PDV",
+    segmento: "Ponto de venda · Hamburgueria",
+    resumo: "Sistema de caixa para Windows que funciona sem internet, do pedido no balcão ao fechamento do caixa.",
+    desafio: "A loja precisava de um caixa rápido no balcão, com Pix no valor exato e controle do dinheiro na gaveta — sem mensalidade e sem depender de internet.",
+    entrega: [
+      "Combos, adicionais e remoções, com via da cozinha impressa sem preços",
+      "Pix com QR Code no valor exato, troco calculado e pagamento dividido",
+      "Abertura, sangria e fechamento de caixa com conferência do esperado e do contado",
+      "Relatórios de lanches mais pedidos e horários de pico, instalador com atualização automática"
+    ],
+    stack: ["Electron", "React", "TypeScript", "SQLite"],
+    img: "assets/img/work/guhburguer-pdv.webp"
+  },
+  {
     id: "sgq",
     tipo: "sistema",
     destaque: true,
